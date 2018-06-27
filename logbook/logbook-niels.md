@@ -61,29 +61,28 @@ Mijn eerste versie hiervan was dit:
 
 ``` javascript
  input.addEventListener( 'change', event => {
-		const files = event.target.files 
-		for ( const file in files ) {
-			if ( files.hasOwnProperty( file ) ) {
-				const fileNum = files[file]
-				const image = document.createElement( 'img' )
+	const files = event.target.files 
+	for ( const file in files ) {
+		if ( files.hasOwnProperty( file ) ) {
+			const fileNum = files[file]
+			const image = document.createElement( 'img' )
 
-				image.classList.add( 'preview' )
-							
-				const reader  = new FileReader()
-			
-				reader.onloadend = function () {
-					image.src = reader.result //converts this to a long data string for the image preview
-				}
-			
-				if ( fileNum ) {
-					reader.readAsDataURL( fileNum )//reads the data as a URL 
-				}
-				const fileInput = event.target
-				fileInput.insertAdjacentElement( 'afterEnd', image )
+			image.classList.add( 'preview' )
+						
+			const reader  = new FileReader()
+		
+			reader.onloadend = function () {
+				image.src = reader.result //converts this to a long data string for the image preview
 			}
+		
+			if ( fileNum ) {
+				reader.readAsDataURL( fileNum )//reads the data as a URL 
+			}
+			const fileInput = event.target
+			fileInput.insertAdjacentElement( 'afterEnd', image )
 		}
-
-	} ) 
+	}
+} ) 
 ``` 
 
 Toegegeven, mees heeft op mijn computer enigszins meegwerkt aan deze code. Maar de basis hiervan komt mijn hackaton code voor het previewen van images. Ik snap ook wat hij heeft gedaan. Hij loopt door de "file uploads" heen en creëert een image element per file. Vervolgens wordt er met mijn stukje code een data url gemaakt. dit is een manier om de upload als een image op de pagina weergegeven kan worden.
@@ -278,9 +277,9 @@ In week 1 hebben voornamelijk Jaimie, ik en Robin gebrainstormd over hoe de pagi
 
 Aan het einde van week 1 heeft Jaimie een aantal schetsen gemaakt die de globale layout van de pagina's weergaf. Begin van week 2 heeft Mo in Sketch een design gemaakt van de globale style van de website.
 
-![afbeeldingen van Mo's design]()
-![afbeeldingen van Mo's design]()
-![afbeeldingen van Mo's design]()
+![afbeeldingen van Mo's design](https://lh3.googleusercontent.com/hST1dkeB6gGHOzY-m7J9THnpofsPmcFkRCPxALPclOaYBshZYw2IFntJ207AzzAJGemNuNc2FyCwKRf5RLpPkWZwRAImKt06nSVLVaQIh_rmrsjJoVRb97KL4KYrKpzr4XrEJglJvfi7XUSKrVOIPltZlObXtLA9IFzBeG_HlK6ov4HwkJw0DJR4WiSuEwNJIzt1ZVr6AoBaAqREOccvYL3b-CyES6iga6RR185a6Ay6p6U-XKqW4Y7P6z9VfYXykXbo5YQqEqrjH3S0PLgCS_D0RrHrUoNDYV7JYQDUhvhQnsr58K_swFRxa4Zh9yxC0DA9zzbhMVrY7HbedMYF9FJ8a7XWbYs4lKc1dTiaOtAMwZdXsHUhtddQAuvVVHtm_ane0E8oZhCgwGbXfsrp1ensGQN0CDiNZxkBJW0VMguhuDEzrQfmIodsaLNyUcx84BdJmwCRG2dXREtUG2XwcMTjGSDwaxtP4-a9-xE71VuReSZUH6n830eOQkoDpWpq49ae26eDfxtjruPXZTJceXSKTRtUPyJVJtsSwgv2_f9we1Hff2SzDyzykvXYZcEPaDTH1NCNnlU8uBc1CRQfT9O8-yjRB6FI_WeN2Ac=w416-h319-no)
+![afbeeldingen van Mo's design](https://lh3.googleusercontent.com/mtFKfHb-qciCRWIhWatAMd-hGjlBoa4ORBewd_NnhGYpvdgMBNuz9W4wA6Z9R-UPzY4j-1aHqHjFcM9pKmPWOB83gZerSiXXfpuWVpiYpsW-J5lkA18Q_N6vTkiQbWJdxQqPYB3_73ruuR-3WIgpVtS56Nfo9PUEvuNVPzXqOsXeabD6P5-sebeKEojHsM_i03kNKBiKFG55Mlpmx7REUNTc_0rEHAw74_zvjUixNvjlgcB_ZrJzKpHxzj11WIzPEINAnceGFzWesUiIL-6heD35gW-CBJTxXMuANvHeGjQaPfzRUM_PO8ftGbgT_dN42QCLBomfImkM2jWAxQ9wDG39_nCM3Kw1Ze33GcI0q0LM85r8D20waKWw1Hp1bEdEDeN5XDFYmSJc1ycnVvf6W5ZIQAPq-sB08gNphkfIu6zaR7oFNF6j0E-qVHQPR8bO6E8_juXCqEizZCE8NPLKECWEThrkDatXnrOBOmOZr1W8lVUbURDoB28C5Wn44xeYJaVskxuCvzvvSuA5Q3fBRSqmmOIsfGQwB1cZ_QAWuMHpU-kMIU5DKLEPejyPTjQ6NdmVmnfTiZOFZ-KxTl8J86PPY6aZYxi-QGmi3K4=w1400-h1121-no)
+![afbeeldingen van Mo's design](https://lh3.googleusercontent.com/vIYFo7C-HP7HNdaFr_ojf9dwwAJys5PXlDzu5g0peKwJ89YtI3L8PSro-Mw99huOloMXb_1L1_s7VW-vJyLvKc_rAt4DH7qXkutkzHmEFBnlx-dMaio-l5zJ9fA3rTUgbik6sp_WkeiX5W-rKHGJSXJE66zzbX5rcg2k771DlicZDnD6ylie5UsFTjvFq2aPQBntDVm0BNFkfoa67diZrIZr_vky7xXYO7hgFZU7TwyIiVNpBt9ouFRcmVlAaLzaltHfE-p3cW9HOQDAQTeEq9I3jjafNfEZpMw3b4lkbFBka9ga1G6keVeEL4XRDsTQyGQVOhEcmrbtz3WhTslD1lG7h_66qMClRMX9BOzY84MpNy2fMCs03comZywklZ_ALgtriCcAUzo2blFsWs31Xq2XeiJHpk0lDXngjt1Yo7d1aS7c4yHL5IO0VpVuNYbUnQO24ECAdy6fNFkPNCovSpadrQcHvEIWqlgF8vQR8CzUp9DbOpNXGKf72CviJpk6ipIK_1_d6L-uq2L0eC7IU8Ya3vhk-4qS7AbWkhc0Na1iQu-DlfE3nr7pPd-PwH3OVDpGxNdXmH-GrJu8-LjmQVuqInopjVOTXN4LTlo=w1400-h617-no)
 
 Zoals te zien is op de website heb ik de componenten bijna volledig getrouw aan de originele schetsen gemaakt. Voor drie componenten wil ik mijn design keuzes verantwoorden.
 
@@ -288,8 +287,8 @@ Zoals te zien is op de website heb ik de componenten bijna volledig getrouw aan 
 
 Deze pagina is behoorlijk simpel, en aangezien het slechts een admin login pagina betreft wilde ik hem ook simpel maar goedwerkend maken.
 
-![]()
-![]()
+![admin login](https://lh3.googleusercontent.com/LsFwcLDYiTNL9Du_K8hkcuvNs1315laRZu19zGbtvfgko5RT0bM5pjBCIsYOK9Ecr7-W3Dk5zQOMSgqGMh_qijL_01fEAn676xGxNo0hR_3tlyXxGS6WzvwnfAKFjeMHab2fFHYAksAiLsab7pN9KXb_ArC58XtKmPLphMoGKDcby6mdvX8D8P03E6JxtixZGcpW-e2-oOdmwbvSQgQ2DA-PhDWUrUKeBRYzcLOR_OUZyuECLM03hXOEJshTTIPwpOs-9lOXMVu452wCYtBBUlnosJvgAcnnzHCFLzB1pAyGrNDrFNtdwPlNyDarX7b80NBRXph7UZsfJbA-e2YH8rOfy5_FieeCE4UjTSHCSjymFDHeVrZ6pJ--uXv147ZSZMGmQ9i-6lre9-nkn96jItobxho5phZePPlNvGWJIAr0iDi-snjZguopI8sngwnEusxOVExRwqJr1Eydx8-AyWkjsTqZOb7ouoTq8URRglP36DRFFiD835-cw4SNIvD_DeXS19C46ZIY_E9-_qtyc_zLl8lF3FYN4clJRTz7hKA16nFD8uBqgVdvqr71slgJvhEAmhhNNlZlHINRMtA3Bpdr6gRw5OGNk2oOYTw=w1400-h784-no)
+![admin login](https://lh3.googleusercontent.com/xPT2tOSoESpT9OGBVYUt33jINa2s1Yh7hngyFcMck_HN3W7eCTLvdMYuWukBwwaQoXY8_z6XA2H-VZqDpHFYJlPrcDuCIhxkXNG6FRkoAs-2zelY4PxAZfMmK185LmvsFXqKcbSRhDRXe0AtW5ymi78icUrByT7n-e_dB9SzmdHgwnJa4RT1-6At30I9oqyi2oqhI9nG3J2mwSUmBOq-OH59fNJ-Uz3yiTyyfIM7DLF_PzZ6zYuZj9hf84zNrKCZ7ZNNdPiz-jgqpF5H9sfV8j1JjHko6Xeyd8A40hJ12o5m_3d8qUWLiJlXEcPS8yIkFYzK0McATZJ2922Pnza7Fso6UkL68D_qvQ8I7ud_0oijaEcLTUMyLrWzq3aaaBdkMOX_mOeV2LJ4lBIk6qZaY1fIWBUe3pYogLpezAp_I55NFos0hCwv2wwrll-eMyxb-McgQP1ABbGL5qt3QqjDP6ZTX5CmRl9m4Ix8l5skp8dB4Z7U392JrVMwovTLNJg0YxETXVA2WP195D5SdD7ZroiRoakrmrE38InxZQ6wVEBMpnKCT7v3u56DT8jsjdC6D1PT0xmc3b0DDhTJzE_vGznWOZikWqNYkM4McyU=w189-h334-no)
 
 De inputs krijgen een dikkere groen gekleurde bottom border wanneer de inputs aan de vereisten voldoen. Een email moet een email zijn, en het wachtwoord moet minstens 7 tekens hebben. 
 
@@ -318,8 +317,7 @@ input[type="password"] {
 
 De header en nav wilde ik simpel maar doeltreffend houden. Een logo linksboven ter herkenning en de navigatieopties met een call to action rechtsboven. Op mobiel krijg je een gebruikelijk uitklap menu. Op de body kan je vervolgens niet meer scrollen en er wordt een gradient geplaatst over de content die ook de mogelijkheid biedt om het menu te sluiten als je er op klikt. Ook in het uitklap menu is de call to action te zien.
 
-![]()
-![]()
+![](https://lh3.googleusercontent.com/Zvk5uENeFhTs8tYuoJjFfjZ7lV5PjsVMnB5AgxREfvDnQPwBJlvIOIfqOP94UW5zzj3kRFqwfMHjWN69y5spKd_AQT2CYrrW6M07BuIBJ7sYvMU4SO61BiQWJcqvjn2oBOS2UQF_DFrR0ZQNORua_eK6pH5m7E28d1VuazqfA0JJQI5sL_h4v9xEsQ79zaxl-T3WgXQet6bFMlMDmLCQj-R1Q3LMJqTow9Z_kVG2Mbq3t8RWt-hBMA-nyEGOwULyRAQY0cWcBvPXeSbDUFeGL0_3-b_KA7klCvkNSh_59_kXN2knhLGYLv6Hojgxt7z30lqVhg9xMVUhJ0sCOrARCP6m4FKa877oe6vT7KePakQN2sj_eagVLn8kIACylP8vHtxYqti5AA7PCG175NKo1iplQIZeBCdw1q3BWMJnN9-Axd_XNBYDm-CJ1InR-UwAcFUdBfwARlKVg6sNCW_BhVMiIo3KqtVGHRKBgCoHp3FuczK168sve0K3PJKczNcWb-cx4-RySJ_BO7PGpwYV41C452YNScXOIdnYHsd56M_E7O4cG4ryagvNCqGerbV-ZxFv_6xEJN7AMqsHhTkyscY-c-FhWE_C0DaOXX4=w607-h1000-no)
 
 In het stuk over [Browser tech]() vertel ik meer over het menu
 
@@ -327,23 +325,22 @@ In het stuk over [Browser tech]() vertel ik meer over het menu
 
 De banner heeft het design van Mo zo goed mogelijk gevolgd. Zelf vond ik het een leuk idee om een titel, ondertitel en uitgelichte afbeelding op een dergelijke manier weer te geven. Het zorgt voor herkenning, de belangrijkste informatie is direct in beeld en het kan een lezer nieuwschierig maken om echt het verhaal te gaan lezen.
 
-[]()
-[]()
+Een kritiekpunt van Vasillis die ik enigszins wel met hem deel is dat de banner wellicht té zwart is. Aan de ene kant vind ik het zelf mooi contrasterend, maar aan de andere kant lijkt het inderdaad iets te missen.
 
-Een kritiekpunt van Vasillis die ik met hem deel is dat de banner wellicht té zwart is. Aan de ene kant vind ik het zelf mooi contrasterend, maar aan de andere kant lijkt het inderdaad iets te missen.
+Ik ben vervolgens op het idee gekomen om een lichte gradient op de banner te zetten die het zwart een beetje moest doorbreken. De kleur van de gradient moet bepaald worden door de dominante kleur van de foto. Ik ben op het idee gekomen door de app van spotify die dit op een hele goede manier doet.
 
-Ik ben vervolgens op het idee gekomen om een lichte gradient op de banner te zetten die het zwart een beetje moest doorbreken. De kleur van de gradient moet bepaald worden door de dominante kleur van de foto. Ik ben geinspireerd door de app van spotify die dit op een hele goede manier doet.
-
-[]()
+![spotify example](https://lh3.googleusercontent.com/fHaHNmjBoH9gEW0jU1UbeDOGm1zyxlNA2YN8vtSEUVrltzyHyJg6k_x05vKrm12N0GazV9Rha4c_-LgYcREDfuCzvKv7OOy5DCIwiealTCPfoXUUIO2BUdj67xfTQ_qdT9cvPs_qA4U3OgU_SPT0nOfVtmxlNL5nkeBVY_oQjhPj-tRHgZnMq5RrcdJxyIiAv3MKKe1FTAPL7bo2ePHxLJiaXUVdfz2WE7dp0c_mKadL338d_vr6kpq3qAJN0W6isKy0UOsL8LWjiKKEvp4y7iJFqW0IMvA6IBcrM7ahj36hLraxVNiB1jfKtHxX9GwADPWNtYy6vdMCwzbadmSyzmfzCRJAoAB9cEUh78jfEMQOn5QnAHT7yX11atD87zzLyEzdQVO0f8eOwAUwCmqzXtNLgYU9yETccr7ZdYwUKEnc5dzeTqqV4Ujb69r751MOjBR-xgIxM1lNhHlSawDwr0YOmgGH8sB1_00n1OQgVx1NSc5JXBg5BSjYW07x5BZWwi8lv3aok36vFwHktH9gFksgk6_06b-5l_S1TMx6veljtYYqGy_Z3VEYRAVCl3LqhV31ti1CxJ92bHjYRoy8Ga9zzJi0XV4E_ah2Hqk=w140-h302-no)
 
 Doormiddel van een script genaamd ColorThief heb ik het voor elkaar gekregen om ook een gradient op de banner te kunnen zetten. Beter gezegd: de achtergrond van de banner krijgt die kleur, en er zit standaard een zwarte gradient overheen. Dat resulteerde in het volgende:
 
-[]()
-[]()
+![color gradient](https://lh3.googleusercontent.com/YNbZSIHaHxDcOfVRDXCbITmwG3ONtm8aa_nzziqRnScM62KP-cE-FA8M9D4EV-j6gvwkuRt3ST25jWvNJQ502cZrvXjDZqUG8RmOWAUsgQmdC0EwcPQ5_OnTULZSsmXi90yFYSRWGj182f_neGeVBfTQ_laFVMIOhfTOMBKBKrzmjyEONgCLEa3lm7zOkoDrkkGZ_-zbvpST4dCQ0Am4WUeRRg8ekuGyo4hmrcx6BgrKRhlsYo9Z-Q73YQo7XCLUOOu5WqsETFRT6gVCshrwLt8ECGxfhYpzQp6AHhkCyjRW8Mbr_cJIYB9-wDJ6nL7BMrFLD6XOrT4Ifn8qmB_CHlRhUQIuah7wKaDJ9FOZiayIH6sfe1G8g5GElPKF3LWsg2E0d7Iue26FvaoftL5V3xhuq7Bpx3GkaO39iYdlx1k_67GQTT4HU87F-IVA1OD5UWy-JNiGsssqJ_uJNdDIL0BqdH6cYGc27f8dHmGT4nbsnXOjA3XFJTDNlArDXoEmqxQH8uD3aJApRIfaI_MVs-86rGdyfSfnO42qRW_nRud-SWY9HNNf63lh1qJGRn2eysHKaDXG7WQOCFj5q1P5HzNOffsrTUqIz-lPi2g=w1379-h1203-no)
+![color gradient](https://lh3.googleusercontent.com/uZ3-SlGwJmbl3114m2Vuo3Rb2MUthMeHf2JazC_BSfHSadRpx_QllFFwgcJXM3IJdjpANaJLpsrBcyykVBEY6T_DlOrXpElOrDZ5HhvHLpdA63lAcrMtbqDDSEqUSIN31s85px29S2Lr3ABh-EYtlY52aGaNqUBwFqSViOx81C3_RtOYcBytFE01LM5whsRGMTbQ7U8PwIEDuwbVULuvn4JCZm7TBLZ8jhb-ivf__brUD2kOuoXJWOTyhWTTw1mBJIyb-_1ZXTt2Igyyq-x-SgJ1w8PVykJtj4tkhxE4sTK7watry6EDHFpFzCsWDGmXCb1qGN3YAX5vvWFsBsxK0yF50V_fHKJqpaBgkXsRTtrni49b-rvJOnzyP7wdmpFJ7lbcLoyMe18qn9VRAJXCbaTDU4EgF7GAJRDA2dEu2V9OZ_d8PGvJVwAbHdClIxv7JWgN3q93UvzffP4O-bbE4MPHpPwXO703vP96T_zG4HlNb2tbhG_YMFHZ-aoiY3EiirMRKie-sheiE6qAyRIjRBlLiAmnZRjxOUJZOtgU3LoocDDQFr6zbudJMHuUnngZfTRwx9PkNBwZka7I999C2VlTdfHlavFhQAyP0a0=w1400-h1117-no)
 
-Zoals je kan zien schaalt de fe titel en subtitel mee met de breedte van de foto. Bij dunnere foto's vullen ze de banner meer, en bij bredere foto's neemt het een max van 50%b breedte aan.
+Zoals je kan zien schaalt de fe titel en subtitel mee met de breedte van de foto. Bij dunnere foto's vullen ze de banner meer, en bij bredere foto's neemt het een max van 50% breedte aan.
 
 Helaas ging deze feature uiteindelijk niet door omdat er vanuit de foto's uit de database geladen een CORS error gaven. Er was geen toegang om de foto's doormiddel van ColorThief op een canvas te plaatsen om de dominante kleur te onttrekken.
+
+De code kan je [hier](https://github.com/NielsFS/meesterproef-scheepvaartmuseum/commit/6aca44fc51a9ef75002e81b794c4ffdaa759604a) nog wel zien
 
 ## Navigatiemenu en accessibility (gericht op browser tech)
 
@@ -365,11 +362,11 @@ De fixes van Mees zijn [hier](https://github.com/NielsFS/meesterproef-scheepvaar
 
 ## Het eindproduct
 
-Over het algemeen ben ik erg tevreden over het de uiteindelijke oplevering van het project. Ik vind het ook echt bijzonder knap hoe voornamelijk Mees, Servin en Mo de website volledig werkend hebben gekregen. Zij hebben alle backend op zich genomen. Dit was een logische zet aangezien Robin, jamie en ik totaal geen backend ervaring hebben. Servin was chef database, Mo was chef tooling en Mees was een soort vliegende keep die overal zijn steentje heeft bijgedragen.
+Over het algemeen ben ik erg tevreden over het de uiteindelijke oplevering van het project. Ik vind het ook echt bijzonder knap hoe voornamelijk Mees, Servin en Mo de website volledig werkend hebben gekregen. Zij hebben alle backend op zich genomen. Dit was een logische zet aangezien Robin, jamie en ik geen backend ervaring hebben. Servin was chef database, Mo was chef tooling en Mees was een soort vliegende keep die overal zijn steentje heeft bijgedragen.
 
 Ik ben blij dat ondanks dat we zo component georienteerd te werk zijn gegaan, we als team uiteindelijk alles hebben kunnen samenbrengen om een geheel te maken. Er waren momenten waarop ik twijfelde of onze aanpak wel goed was. Een pagina bestaat namelijk uit allerlei verschillende componenten die vaak door verschillende personen zijn gemaakt. Die moeten uiteindelijk wel met elkaar samengaan. Gelukkig heeft dit niet to problemen geleid. Onder andere door goed overleg. 
 
-Qua uiteindelijke vormgeving ben ik niet 100% tevreden. Dit heeft er niet mee te maken dat ik de pagina's niet goed vindt. Integendeel. Ik zou echter wel bepaalde dingen anders hebben gemaakt of vormgegeven. Toch heb ik mij door dit project echt gerealiseerd dat er verschillende smaken zijn. Daarom ook goed dat we uiteindelijk een werkend eindproduct hebben waar we allemaal op afgestemd waren. Grappig is ook dat mijn vriendin onze website weer super leuk vindt terwijl ze bijvoorbeeld de minor website weer niet leuk vindt (En dat zei ze niet omdat ik er aan meegwerkt had, ze is nogal kritisch meestal). Dat was gek om te horen aangezien ik weer vindt dat die qua design sterker is dan onze website. Wellicht imposter effect? 
+Qua uiteindelijke vormgeving ben ik niet 100% tevreden. Dit heeft er niet mee te maken dat ik de pagina's niet goed vindt. Integendeel. Ik zou echter wel bepaalde dingen anders hebben gemaakt of vormgegeven. Toch heb ik mij door dit project echt gerealiseerd dat er verschillende smaken zijn. Daarom ook goed dat we uiteindelijk een werkend eindproduct hebben waar we allemaal op afgestemd waren. Grappig is ook dat mijn vriendin onze website weer super leuk vindt terwijl ze bijvoorbeeld de minor website weer niet leuk vindt (En dat zei ze niet omdat ik er aan meegwerkt had, ze is nogal kritisch meestal). Dat was gek om te horen aangezien ik die minor website qua design sterker vindt dan onze website. Wellicht imposter effect? 
 
 Ook is het erg bemoedigend dat Ernst, de coördinator uit het scheepvaartmuseum, erg enthousiast is over het resultaat. Zo wil hij het liefste dit project in de zomervakantie of na de zomervakantie doorontwikkelen. 
 
@@ -378,6 +375,10 @@ Ook is het erg bemoedigend dat Ernst, de coördinator uit het scheepvaartmuseum,
 Met de samenwerking ben ik ook erg tevreden. Het was best een uitdaging, een team van 6 man. Sommigen hadden aanzienlijk meer ervaring dan anderen. Mo Servin en Mees zijn bijvoorbeeld enorm sterk in Javascript. Die ervaring mis ik nog wel. Ondanks het verschil in ervaring heb ik wel het gevoel gehad dat ik echt mee kon doen in het team. Zo heb ik een aantal componenten gemaakt die werken en in de eindversie terecht zijn gekomen. Ook kon ik altijd terecht bij al mijn teamgenoten voor vragen. De volledige opzet van het project was nieuw voor me, en het feit dat ik toch gemakkelijk mee kon in het hele proces en dat ik daarin kon groeien is heel fijn. Met Jamie en Robin kon ik ook goed samenwerken. Ook bij heb kon ik terecht voor vragen en second opinions.
 
 Achteraf gezien zijn er ook wel punten geweest die ik lastiger heb gevonden. Zo moet je namelijk als je een bepaald idee over iets hebt niet één of twee mensen overtuigen, maar alle 5 teamgenoten. Dat betekent dat sommige ideeën worden overgenomen, maar veel ook niet. Maar aangezien dit een teameffort is geweest is dat logisch, en iets dat je mee om moet kunnen gaan. In ons geval vond ik dat we dat best goed met zijn allen hebben gedaan. Iedereen kon iedeeën inbrengen, en als er concensus was gingen we er mee door. 
+
+Ook had ik soms moeite met aanpassingen aanbrengen in de code van Mo, Mees of Servin. Ze gebruitke naar mijn idee best geavanceerde Javascript. Ik heb best vaak aan hen moeten vragen wat het nou precies was dat ze hadden gedaan. Gelukkig legden ze dat graag uit. Hierdoor heb ik ook her en der mijn Javascript aanpassingen kunnen doen los van mijn componenten. 
+
+Ook Mo was erg behulpzaam met het uitleggen van terminal commands en wanneer er bijvoorbeeld een merge niet goed was gegaan. Doordat hij vaak meteen kon kijken als ik er zelf niet uit kwam ging er weinig tijd verloren. 
 
 ## Conclusie
 
