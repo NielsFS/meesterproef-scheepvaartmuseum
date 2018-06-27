@@ -49,9 +49,9 @@ Aangezien ik nog vrij "nieuw" ben in coderen en ook designen vind ik het heel be
 
 ## ES6 Javascript + modulair Javascript (gericht op WAFS):
 
-Dit was een van de grotere uitdagingen. Javascript is momenteel niet een van mijn sterke kanten. Toch wil ik heel graag mij hier in verbeteren. Een belangrijk leerdoel was dat ik ES6 Javascript zou kunnen toepassen. Ik wilde arrow functions leren, forEach loops toepassen ipv de for loop, ik wilde de nieuwe variabelen const en let toepassen, en als aller belangrijkste wilde ik leren om niet een brij aan code te schrijven maar om modulair javascript te schrijven.
+Dit was een van de grotere uitdagingen. Javascript is momenteel niet een van mijn sterke kanten. Toch wil ik heel graag mij hier in verbeteren. Een belangrijk leerdoel was dat ik ES6 Javascript zou kunnen toepassen. Ik wilde arrow functions leren, forEach loops toepassen ipv de for loop, ik wilde de nieuwe variabelen const en let toepassen, en als aller belangrijkste wilde ik leren om niet een brij aan code te schrijven maar om herbruikbare en aanroepbare functies te schrijven.
 
-Mo heeft tijdens het project een soort supertooling geschreven die als een soort docter frankenstijn automatisch ES5 code aanpast naar ES6, althans de basis dingen zoals var naar const veranderen en functies automatisch naar arrow functies veranderen. Toch heb ik nu weldegelijk geleerd wat deze ES6 code betekent en hoe ik het nu kan toepassen. 
+Mo heeft tijdens het project een soort supertooling geschreven die als een soort docter frankenstijn automatisch ES5 code aanpast naar ES6, althans de basis dingen zoals var naar const veranderen en functies automatisch naar arrow functies veranderen. Toch heb ik nu weldegelijk kunnen leren wat deze ES6 code betekent en hoe ik het nu kan toepassen. 
 
 Een voorbeeld is de foto en audio preview die ik heb gemaak op de formulier pagina. Hier zijn uiteindelijk een aantal code reviews en iteraties overheen gegaan. 
 
@@ -173,7 +173,7 @@ if ( files.hasOwnProperty( file ) ) {
 }
 ```
 
-Zodoende is er een nieuw component afgemaakt en heb ik enorm veel geleerd over het aanroepen van een functie wanneer er aan een bepaald vereisde voldaan wordt. Ook snap ik nu het nut van aanroepbare functies schrijven. Ook snap ik nu hoe je parameters kan meegeven en dat je die kan hernoemen voor nieuwe situaties. 
+Zodoende is er een nieuw component afgemaakt en heb ik enorm veel geleerd over het aanroepen van een functie wanneer er aan een bepaald vereisde voldaan wordt. Ook snap ik nu het nut van aanroepbare functies schrijven. Een extra leermomentje was hoe je parameters kan meegeven en dat je die kan hernoemen voor nieuwe situaties. 
 
 Nog een aantal andere componenten waar ik Javascript voor heb geschreven zijn:
 
