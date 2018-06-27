@@ -424,7 +424,7 @@ Met de samenwerking ben ik ook erg tevreden. Het was best een uitdaging, een tea
 
 Achteraf gezien zijn er ook wel punten geweest die ik lastiger heb gevonden. Zo moet je namelijk als je een bepaald idee over iets hebt niet één of twee mensen overtuigen, maar alle 5 teamgenoten. Dat betekent dat sommige ideeën worden overgenomen, maar veel ook niet. Maar aangezien dit een teameffort is geweest is dat logisch, en iets dat je mee om moet kunnen gaan. In ons geval vond ik dat we dat best goed met zijn allen hebben gedaan. Iedereen kon iedeeën inbrengen, en als er concensus was gingen we er mee door. 
 
-Ook had ik soms moeite met aanpassingen aanbrengen in de code van Mo, Mees of Servin. Ze gebruitke naar mijn idee best geavanceerde Javascript. Ik heb best vaak aan hen moeten vragen wat het nou precies was dat ze hadden gedaan. Gelukkig legden ze dat graag uit. Hierdoor heb ik ook her en der mijn Javascript aanpassingen kunnen doen los van mijn componenten. 
+Ook had ik soms moeite met aanpassingen aanbrengen in de code van Mo, Mees of Servin. Ik heb best vaak aan hen moeten vragen wat het nou precies was dat ze hadden gedaan. Gelukkig legden ze dat graag uit. Hierdoor heb ik ook her en der mijn Javascript aanpassingen kunnen doen los van mijn componenten. 
 
 Ook Mo was erg behulpzaam met het uitleggen van terminal commands en wanneer er bijvoorbeeld een merge niet goed was gegaan. Doordat hij vaak meteen kon kijken als ik er zelf niet uit kwam ging er weinig tijd verloren. 
 
@@ -433,7 +433,7 @@ Ook Mo was erg behulpzaam met het uitleggen van terminal commands en wanneer er 
 Het was een project vol met nieuwe ervaringen. Voor het gemak ga ik ze allemaal noemen:
 
 - Als team werken in GitHub
-- Me houden aan code conventies
+- Gebruiken van code conventies 
 - Werken met de terminal
 - SCSS
 - Werken binnen EJS
