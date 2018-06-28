@@ -93,7 +93,7 @@ Aangezien ik nog vrij "nieuw" ben in coderen en ook designen vind ik het heel be
 ##### Voor een overzicht van all mijn pull requests kan je [hier](https://github.com/moniac/meesterproef-scheepvaartmuseum/pulls?q=is%3Apr+author%3ANielsFS+is%3Aclosed) klikken. Verder zie je hieronder een aantal belangrijke leermomenten van mij:
 
 
-## ES6 Javascript + modulair Javascript (gericht op WAFS):
+## ES6 Javascript + herbruikbaar Javascript (gericht op WAFS):
 
 Dit was een van de grotere uitdagingen. Javascript is momenteel niet een van mijn sterke kanten. Toch wil ik heel graag mij hier in verbeteren. Een belangrijk leerdoel was dat ik ES6 Javascript zou kunnen toepassen. Ik wilde arrow functions leren, forEach loops toepassen ipv de for loop, ik wilde de nieuwe variabelen const en let toepassen, en als aller belangrijkste wilde ik leren om niet een brij aan code te schrijven maar om herbruikbare en aanroepbare functies te schrijven.
 
@@ -325,7 +325,7 @@ Aan het einde van week 1 heeft Jaimie een aantal schetsen gemaakt die de globale
 
 <img src="https://lh3.googleusercontent.com/mtFKfHb-qciCRWIhWatAMd-hGjlBoa4ORBewd_NnhGYpvdgMBNuz9W4wA6Z9R-UPzY4j-1aHqHjFcM9pKmPWOB83gZerSiXXfpuWVpiYpsW-J5lkA18Q_N6vTkiQbWJdxQqPYB3_73ruuR-3WIgpVtS56Nfo9PUEvuNVPzXqOsXeabD6P5-sebeKEojHsM_i03kNKBiKFG55Mlpmx7REUNTc_0rEHAw74_zvjUixNvjlgcB_ZrJzKpHxzj11WIzPEINAnceGFzWesUiIL-6heD35gW-CBJTxXMuANvHeGjQaPfzRUM_PO8ftGbgT_dN42QCLBomfImkM2jWAxQ9wDG39_nCM3Kw1Ze33GcI0q0LM85r8D20waKWw1Hp1bEdEDeN5XDFYmSJc1ycnVvf6W5ZIQAPq-sB08gNphkfIu6zaR7oFNF6j0E-qVHQPR8bO6E8_juXCqEizZCE8NPLKECWEThrkDatXnrOBOmOZr1W8lVUbURDoB28C5Wn44xeYJaVskxuCvzvvSuA5Q3fBRSqmmOIsfGQwB1cZ_QAWuMHpU-kMIU5DKLEPejyPTjQ6NdmVmnfTiZOFZ-KxTl8J86PPY6aZYxi-QGmi3K4=w1400-h1121-no" width="600px"> 
 
-Zoals te zien is op de website heb ik de componenten bijna volledig getrouw aan de originele schetsen gemaakt. Voor drie componenten wil ik mijn design keuzes verantwoorden.
+Zoals te zien is op de website heb ik de componenten bijna volledig getrouw aan de originele schetsen gemaakt. 
 
 ### De Admin login pagina:
 
