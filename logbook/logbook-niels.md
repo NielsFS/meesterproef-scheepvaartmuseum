@@ -31,7 +31,7 @@ Aangezien ik nog vrij "nieuw" ben in coderen en ook designen vind ik het heel be
 + Header + navigatie (met laatste aanpassing van mees)
 + Preview foto en audio elementen op de "maak verhaal" pagina
 + De banner met afbeelding en titel op de "detail" pagina
-+ Styleguide en basis buttons (in samenwerking met de groepsgenoten)
++ Styleguide en basis buttons (in samenwerking met groepsgenoten)
 
 #### gestylede componenten:
 
@@ -39,19 +39,18 @@ Aangezien ik nog vrij "nieuw" ben in coderen en ook designen vind ik het heel be
 + input type="file" button gestyled met label er omheen
 + verhalen "cards" met afbeelding & titel 
 + Intro tekst op de homepage
-+ gewerkt aan pagina's mobiel responsive maken (alle pagina's)
-+ De componenten die ik zelf heb gemaakt.
++ gewerkt aan pagina's mobiel responsive maken 
 
 ## De aangetoonde competenties
 
 ##### Voor een overzicht van all mijn pull requests kan je [hier](https://github.com/moniac/meesterproef-scheepvaartmuseum/pulls?q=is%3Apr+author%3ANielsFS+is%3Aclosed) klikken. Verder zie je hieronder een aantal belangrijke leermomenten van mij:
 
 
-## ES6 Javascript + modulair Javascript (gericht op WAFS):
+## ES6 Javascript + herbruikbaar Javascript (gericht op WAFS):
 
 Dit was een van de grotere uitdagingen. Javascript is momenteel niet een van mijn sterke kanten. Toch wil ik heel graag mij hier in verbeteren. Een belangrijk leerdoel was dat ik ES6 Javascript zou kunnen toepassen. Ik wilde arrow functions leren, forEach loops toepassen ipv de for loop, ik wilde de nieuwe variabelen const en let toepassen, en als aller belangrijkste wilde ik leren om niet een brij aan code te schrijven maar om herbruikbare en aanroepbare functies te schrijven.
 
-Mo heeft tijdens het project een soort supertooling geschreven die als een soort docter frankenstijn automatisch ES5 code aanpast naar ES6, althans de basis dingen zoals var naar const veranderen en functies automatisch naar arrow functies veranderen. Toch heb ik nu weldegelijk kunnen leren wat deze ES6 code betekent en hoe ik het nu kan toepassen. 
+Mo heeft tijdens het project een soort supertooling geschreven die als een soort dokter Frankenstijn automatisch ES5 code aanpast naar ES6, althans de basis dingen zoals var naar const veranderen en functies automatisch naar arrow functies veranderen. Toch heb ik nu weldegelijk kunnen leren wat deze ES6 code betekent en hoe ik het nu kan toepassen. 
 
 Een voorbeeld is de foto en audio preview die ik heb gemaak op de formulier pagina. Hier zijn uiteindelijk een aantal code reviews en iteraties overheen gegaan. 
 
@@ -185,7 +184,7 @@ Er zijn later mogelijk nog veranderingen toegepast op deze componenten
 
 ## Gestructureerde CSS en meer DRY principe toepassen (Gericht op CSSTTR)
 
-Aan het begin van het project is er bepaald dat we met SCSS gaan werken. Voor mij was SCSS compleet nieuw, maar Mo, Servin en Mees hadden al veel (werk) ervaring met SCSS. Ik vond het enorm interessant om dit te leren, omdat het in het huidige webdevelopment werkklimaat volgensmij veel gebruikt wordt. Ook hebben we een variant van de BEM class notatie gebruikt om zo makkelijk in SCSS te werk te kunnen. 
+Aan het begin van het project is er bepaalt dat we met SCSS gaan werken. Voor mij was SCSS compleet nieuw, maar Mo, Servin en Mees hadden al veel (werk) ervaring met SCSS. Ik vond het enorm interessant om dit te leren, omdat het in het huidige webdevelopment werkklimaat volgensmij veel gebruikt wordt. Ook hebben we een variant van de BEM class notatie gebruikt om zo makkelijk in SCSS te werk te kunnen. 
 
 Tot mijn verrassing was ik al vrij snel gewend geraakt aan SCSS. Ik vond de snelle mediaquery notatie en de indenting erg prettig. Het zorgde er in ieder geval dat mijn CSS voor mijn gevoel erg leesbaar was geworden. Ook heeft het er denk ik voor gezorgd dat ik heel veel minder dubbele styles heb toegevoegd. Ik was namelijk verplicht om die alleen binnen een bepaalde structuur toe te voegen en daar hou je je dan ook wel snel aan.
 
@@ -242,7 +241,7 @@ In het volgende voorbeeld zie je terug:
 }
 ```
 
-Hier onder verwijs ik naar een aantal gestylde componenten. Ik heb ze in de volgorde gezet waarin ik ze heb gemaakt. De oudste als eerste, en de nieuwste als laatste:
+Hieronder verwijs ik naar een aantal gestylde componenten. Ik heb ze in de volgorde gezet waarin ik ze heb gemaakt. De oudste als eerste, en de nieuwste als laatste:
 
 1. Admin login pagina - [klik hier om mijn pull request te zien](https://github.com/moniac/meesterproef-scheepvaartmuseum/pull/40/files/8c9575a03bfc67bf75c23ba9dd329aa2ef71db9b)
 2. header + nav (alle commits) - [klik hier voor het volledige overzicht](https://github.com/NielsFS/meesterproef-scheepvaartmuseum/commits/17cc3194a83f56f49d7de3a7246835732c9aaf09/views/components/header/_header.scss)
@@ -253,7 +252,7 @@ Hier onder verwijs ik naar een aantal gestylde componenten. Ik heb ze in de volg
 
 Verder heb ik nog allerlei kleine tweaks hier en daar gedaan maar die ga ik voor de overzichtelijkheid hier niet noemen.
 
-## Webdesign principes (van Joshua Porter) (Gericht op het vak Webdesign)
+## Webdesign principes (Gericht op het vak Webdesign)
 
 Aangezien we het project hebben opgedeeld in componenten valt niet een heel pagina design terug te leiden naar mij. Wel ben ik verantwoordelijk geweest voor een aantal componenten die op meerdere plekken in het project te zien zijn. 
 
@@ -279,7 +278,7 @@ Aan het einde van week 1 heeft Jaimie een aantal schetsen gemaakt die de globale
 
 <img src="https://lh3.googleusercontent.com/mtFKfHb-qciCRWIhWatAMd-hGjlBoa4ORBewd_NnhGYpvdgMBNuz9W4wA6Z9R-UPzY4j-1aHqHjFcM9pKmPWOB83gZerSiXXfpuWVpiYpsW-J5lkA18Q_N6vTkiQbWJdxQqPYB3_73ruuR-3WIgpVtS56Nfo9PUEvuNVPzXqOsXeabD6P5-sebeKEojHsM_i03kNKBiKFG55Mlpmx7REUNTc_0rEHAw74_zvjUixNvjlgcB_ZrJzKpHxzj11WIzPEINAnceGFzWesUiIL-6heD35gW-CBJTxXMuANvHeGjQaPfzRUM_PO8ftGbgT_dN42QCLBomfImkM2jWAxQ9wDG39_nCM3Kw1Ze33GcI0q0LM85r8D20waKWw1Hp1bEdEDeN5XDFYmSJc1ycnVvf6W5ZIQAPq-sB08gNphkfIu6zaR7oFNF6j0E-qVHQPR8bO6E8_juXCqEizZCE8NPLKECWEThrkDatXnrOBOmOZr1W8lVUbURDoB28C5Wn44xeYJaVskxuCvzvvSuA5Q3fBRSqmmOIsfGQwB1cZ_QAWuMHpU-kMIU5DKLEPejyPTjQ6NdmVmnfTiZOFZ-KxTl8J86PPY6aZYxi-QGmi3K4=w1400-h1121-no" width="600px"> 
 
-Zoals te zien is op de website heb ik de componenten bijna volledig getrouw aan de originele schetsen gemaakt. Voor drie componenten wil ik mijn design keuzes verantwoorden.
+Zoals te zien is op de website heb ik de componenten bijna volledig getrouw aan de originele schetsen gemaakt. 
 
 ### De Admin login pagina:
 
@@ -373,11 +372,11 @@ Ook is het erg bemoedigend dat Ernst, de coördinator uit het scheepvaartmuseum,
 
 ## Samenwerking
 
-Met de samenwerking ben ik ook erg tevreden. Het was best een uitdaging, een team van 6 man. Sommigen hadden aanzienlijk meer ervaring dan anderen. Mo Servin en Mees zijn bijvoorbeeld enorm sterk in Javascript. Die ervaring mis ik nog wel. Ondanks het verschil in ervaring heb ik wel het gevoel gehad dat ik echt mee kon doen in het team. Zo heb ik een aantal componenten gemaakt die werken en in de eindversie terecht zijn gekomen. Ook kon ik altijd terecht bij al mijn teamgenoten voor vragen. De volledige opzet van het project was nieuw voor me, en het feit dat ik toch gemakkelijk mee kon in het hele proces en dat ik daarin kon groeien is heel fijn. Met Jamie en Robin kon ik ook goed samenwerken. Ook bij heb kon ik terecht voor vragen en second opinions.
+Met de samenwerking ben ik ook erg tevreden. Het was best een uitdaging, een team van 6 man. Sommigen hadden aanzienlijk meer ervaring dan anderen. Mo Servin en Mees zijn bijvoorbeeld enorm sterk in Javascript. Die ervaring mis ik nog wel. Ondanks het verschil in ervaring heb ik wel het gevoel gehad dat ik echt mee kon doen in het team. Zo heb ik een aantal componenten gemaakt die werken en in de eindversie terecht zijn gekomen. Ook kon ik altijd terecht bij al mijn teamgenoten voor vragen. De volledige opzet van het project was nieuw voor me, en het feit dat ik toch gemakkelijk mee kon in het hele proces en dat ik daarin kon groeien is heel fijn. Met Jamie en Robin kon ik ook goed samenwerken. Ook bij hen kon ik terecht voor vragen en second opinions.
 
 Achteraf gezien zijn er ook wel punten geweest die ik lastiger heb gevonden. Zo moet je namelijk als je een bepaald idee over iets hebt niet één of twee mensen overtuigen, maar alle 5 teamgenoten. Dat betekent dat sommige ideeën worden overgenomen, maar veel ook niet. Maar aangezien dit een teameffort is geweest is dat logisch, en iets dat je mee om moet kunnen gaan. In ons geval vond ik dat we dat best goed met zijn allen hebben gedaan. Iedereen kon iedeeën inbrengen, en als er concensus was gingen we er mee door. 
 
-Ook had ik soms moeite met aanpassingen aanbrengen in de code van Mo, Mees of Servin. Ze gebruitke naar mijn idee best geavanceerde Javascript. Ik heb best vaak aan hen moeten vragen wat het nou precies was dat ze hadden gedaan. Gelukkig legden ze dat graag uit. Hierdoor heb ik ook her en der mijn Javascript aanpassingen kunnen doen los van mijn componenten. 
+Ook had ik soms moeite met aanpassingen aanbrengen in de code van Mo, Mees of Servin. Ik heb best vaak aan hen moeten vragen wat het nou precies was dat ze hadden gedaan. Gelukkig legden ze dat graag uit. Hierdoor heb ik ook her en der mijn Javascript aanpassingen kunnen doen los van mijn componenten.
 
 Ook Mo was erg behulpzaam met het uitleggen van terminal commands en wanneer er bijvoorbeeld een merge niet goed was gegaan. Doordat hij vaak meteen kon kijken als ik er zelf niet uit kwam ging er weinig tijd verloren. 
 
@@ -386,7 +385,7 @@ Ook Mo was erg behulpzaam met het uitleggen van terminal commands en wanneer er 
 Het was een project vol met nieuwe ervaringen. Voor het gemak ga ik ze allemaal noemen:
 
 - Als team werken in GitHub
-- Me houden aan code conventies
+- Gebruiken van code conventies 
 - Werken met de terminal
 - SCSS
 - Werken binnen EJS
@@ -394,4 +393,4 @@ Het was een project vol met nieuwe ervaringen. Voor het gemak ga ik ze allemaal 
 - Frustratie met merge conflicten, pushen pullen etc.
 - ES6 Javascript gebruiken
 
-Voor mijn gevoel ben ik tijdens de meesterproef blootgesteld aan allerlei dingen waar ik mij in het begin van deze minor geen raad mee had geweten. Ontzettend tof dus om te zien dat we als team uiteindelijk een werkende site de lucht in hebben gekregen, waaraan ik mijn steentje heb kunnen bijdragen. 
+Voor mijn gevoel ben ik tijdens de meesterproef blootgesteld aan allerlei dingen waar ik mij in het begin van deze minor geen raad mee had geweten. Ontzettend tof dus om te zien dat we als team uiteindelijk een werkende site de lucht in hebben gekregen, waaraan ik mijn steentje heb kunnen bijdragen.
